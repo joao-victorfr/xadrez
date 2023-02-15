@@ -204,7 +204,7 @@ const torreBrancaDireita = () => {
   image.style.width = '10px';
 };
 
-const torrePretaDireita = () => {
+const torrePretaDireita ´= () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
   image.className = 'torre';
@@ -232,6 +232,10 @@ const peoes = () => {
   }
 }
 
+const changePosition = () => {
+
+}
+
 window.onload = () => {
   createBoard();
   torreBrancaEsquerda();
@@ -252,3 +256,5 @@ window.onload = () => {
   torrePretaDireita();
   peoes();
 };
+
+
