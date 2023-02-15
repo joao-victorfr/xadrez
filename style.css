@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#border {
+  align-items: center;
+  display: flex; 
+  justify-content: center;
+}
+
+#field {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 45%;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pixel {
+  width: 85px;
+  height: 85px;
+  border: 1px solid gray;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+}
+
+.torre {
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+#torreBrancaEsquerda {
+  width: 42.5px
+}
+
+#torrePretaEsquerda {
+  width: 42.5px
+}
+
+.cavalo {
+  margin-left: 18%;
+  margin-top: 15%;
+}
+
+#cavaloBrancoEsquerda {
+  width: 55px
+}
+
+#cavaloPretoEsquerda {
+  width: 55px
+}
+
+.bispo {
+  margin-left: 20%;
+  margin-top: 18%;
+}
+
+#bispoBrancoEsquerda {
+  width: 55px
+}
+
+#bispoPretoEsquerda {
+  width: 55px
+}
+
+.rei {
+  margin-left: 20%;
+  margin-top: 18%;
+}
+
+#reiBranco {
+  width: 55px
+}
+
+#reiPreto {
+  width: 55px
+}
+
+.rainha {
+  margin-left: 20%;
+  margin-top: 18%;
+}
+
+#rainhaBranca {
+  width: 55px
+}
+
+#rainhaPreta {
+  width: 55px
+}
+
+#bispoBrancoDireita {
+  width: 55px
+}
+
+#bispoPretoDireita {
+  width: 55px
+}
+
+#cavaloBrancoDireita {
+  width: 55px
+}
+
+#cavaloPretoDireita {
+  width: 55px
+}
+
+#torreBrancaDireita {
+  width: 42.5px
+}
+
+#torrePretaDireita {
+  width: 42.5px
+}
+
+.peoes {
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+.peao {
+  width: 42.5px
+}
