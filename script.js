@@ -72,163 +72,145 @@ const createBoard = () => {
 const torreBrancaEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'torre';
+  image.className = 'div_peca';
   pixel[0].appendChild(image);
   image.innerHTML = "<img id='torreBrancaEsquerda' class='pieces' src='torre-branco.png'>";
-  image.style.width = '10px';
 };
 
 const torrePretaEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'torre';
+  image.className = 'div_peca';
   pixel[56].appendChild(image);
   image.innerHTML = "<img id='torrePretaEsquerda' class='pieces' src='torre.png'>";
-  image.style.width = '10px';
 };
 
 const cavaloBrancoEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'cavalo';
+  image.className = 'div_peca';
   pixel[1].appendChild(image);
   image.innerHTML = "<img id='cavaloBrancoEsquerda' class='pieces' src='cavalo-branco.png'>";
-  image.style.width = '10px';
 };
 
 const cavaloPretoEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'cavalo';
+  image.className = 'div_peca';
   pixel[57].appendChild(image);
   image.innerHTML = "<img id='cavaloPretoEsquerda' class='pieces' src='cavalo.png'>";
-  image.style.width = '10px';
 };
 
 const bispoBrancoEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'bispo';
+  image.className = 'div_peca';
   pixel[2].appendChild(image);
   image.innerHTML = "<img id='bispoBrancoEsquerda' class='pieces' src='bispo-branco.png'>";
-  image.style.width = '10px';
 };
 
 const bispoPretoEsquerda = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'bispo';
+  image.className = 'div_peca';
   pixel[58].appendChild(image);
   image.innerHTML = "<img id='bispoPretoEsquerda' class='pieces' src='bispo.png'>";
-  image.style.width = '10px';
 };
 
 const reiBranco = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'rei';
+  image.className = 'div_peca';
   pixel[3].appendChild(image);
   image.innerHTML = "<img id='reiBranco' class='pieces' src='rei-branco.png'>";
-  image.style.width = '10px';
 };
 
 const reiPreto = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'rei';
+  image.className = 'div_peca';
   pixel[59].appendChild(image);
   image.innerHTML = "<img id='reiPreto' class='pieces' src='rei.png'>";
-  image.style.width = '10px';
 };
 
 const rainhaBranca = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'rainha';
+  image.className = 'div_peca';
   pixel[4].appendChild(image);
   image.innerHTML = "<img id='rainhaBranca' class='pieces' src='rainha-branco.png'>";
-  image.style.width = '10px';
 };
 
 const rainhaPreta = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'rainha';
+  image.className = 'div_peca';
   pixel[60].appendChild(image);
   image.innerHTML = "<img id='rainhaPreta' class='pieces' src='rainha.png'>";
-  image.style.width = '10px';
 };
 
 const bispoBrancoDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'bispo';
+  image.className = 'div_peca';
   pixel[5].appendChild(image);
   image.innerHTML = "<img id='bispoBrancoDireita' class='pieces' src='bispo-branco.png'>";
-  image.style.width = '10px';
 };
 
 const bispoPretoDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'bispo';
+  image.className = 'div_peca';
   pixel[61].appendChild(image);
   image.innerHTML = "<img id='bispoPretoDireita' class='pieces' src='bispo.png'>";
-  image.style.width = '10px';
 };
 
 const cavaloBrancoDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'cavalo';
+  image.className = 'div_peca';
   pixel[6].appendChild(image);
   image.innerHTML = "<img id='cavaloBrancoDireita' class='pieces' src='cavalo-branco.png'>";
-  image.style.width = '10px';
 };
 
 const cavaloPretoDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'cavalo';
+  image.className = 'div_peca';
   pixel[62].appendChild(image);
   image.innerHTML = "<img id='cavaloPretoDireita' class='pieces' src='cavalo.png'>";
-  image.style.width = '10px';
 };
 
 const torreBrancaDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'torre';
+  image.className = 'div_peca';
   pixel[7].appendChild(image);
   image.innerHTML = "<img id='torreBrancaDireita' class='pieces' src='torre-branco.png'>";
-  image.style.width = '10px';
 };
 
 const torrePretaDireita = () => {
   const pixel = document.getElementsByClassName('pixel');
   const image = document.createElement('div');
-  image.className = 'torre';
+  image.className = 'div_peca';
   pixel[63].appendChild(image);
   image.innerHTML = "<img id='torrePretaDireita' class='pieces' src='torre.png'>";
-  image.style.width = '10px';
 };
 
 const peoes = () => {
   for (let index = 8; index <= 15; index += 1) {
     const pixel = document.getElementsByClassName('pixel');
     const image = document.createElement('div');
-    image.className = 'peoes';
+    image.className = 'div_peca';
     pixel[index].appendChild(image);
     image.innerHTML = "<img class='peao pieces' src='peao-branco.png'>";
-    image.style.width = '10px';
   }
   for (let index = 48; index <= 55; index += 1) {
     const pixel = document.getElementsByClassName('pixel');
     const image = document.createElement('div');
-    image.className = 'peoes';
+    image.className = 'div_peca';
     pixel[index].appendChild(image);
     image.innerHTML = "<img class='peao pieces' src='peao.png'>";
-    image.style.width = '10px';
   }
 }
 
