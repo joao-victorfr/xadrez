@@ -232,7 +232,7 @@ const peoes = () => {
   }
 }
 
-const changePosition = (evt) => {
+const changePosition = (evt, pastPosition) => {
   let fatherPieceSelected = localStorage.getItem('selecionedPiece');
   const pixel = document.getElementsByClassName('pixel');
   console.log(evt.target);
@@ -243,6 +243,13 @@ const changePosition = (evt) => {
     }
   }
 
+}
+
+const rulesTorre = (torre) => {
+  const pixel = document.querySelectorAll(".pixel");
+  for (let index = torre; index < (torre + 8); index += 1) {
+    pixel[index].style.backgroundColor = 'red';
+  }
 }
 
 const select = (evt) => {
@@ -258,17 +265,22 @@ const select = (evt) => {
     if (pieces[index] === evt.target || pieces[index] === clicked){
       pieces[index].classList.add('selected');
       fatherPieceSelected = pieces[index].parentElement.parentElement.innerHTML
-      pieceSelected = pieces[index].parentElement.innerHTML;
-      pieces[index].parentElement.innerHTML = ''; 
-
       localStorage.setItem('selecionedPiece', fatherPieceSelected);
       const pixel = document.querySelectorAll(".pixel");
       for (let index = 0; index < pixel.length; index += 1) {
+        if (pixel[index].children.className.contains('torre')){
+          console.log(pixel[index]);
+          rulesTorre(pixel[index]);
+        }
+        //console.log(pixel[index].children.classList.contains('torre'));
         pixel[index] = document.addEventListener('click', changePosition);
       }
+      pieces[index].parentElement.parentElement.innerHTML = ''; 
     }
   }
 };
+
+
 
 window.onload = () => {
   createBoard();
